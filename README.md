@@ -6,6 +6,8 @@ Some helpful ROS related guides:
 
 [Learning Turtlebot](https://learn.turtlebot.com/)
 
+[leg detection package](http://wiki.ros.org/leg_detector)
+
 
 Some potential ideas
 
