@@ -12,6 +12,10 @@ Some helpful ROS related guides:
 
 
 # Turtlebot package installation
-1. Go get a virtual machine. 
+1. Go get a virtual machine with a Ubunu 16.04 image. (may update this more later) 
 2. Follow [this](http://wiki.ros.org/kinetic/Installation/Ubuntu) to install ROS. 
+3. In a terminal, 
+```bash
+sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs
+```
 
