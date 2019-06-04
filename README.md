@@ -13,13 +13,17 @@ Some helpful ROS related guides:
 
 # Turtlebot package installation
 1. Go get a virtual machine with a Ubunu 16.04 image. (may update this more later) 
-2. Follow [this](http://wiki.ros.org/kinetic/Installation/Ubuntu) to install ROS. 
+2. Follow [this](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment) to install ROS. Make sure you put Kinetic as the <distro>. Make sure you also set up your catkin workspace.
 3. In a terminal, 
 ```bash
 sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs
 ```
 4. You should now have the turtlebot packages
 5. Make sure you source your bash file
+```bash
+source devel/setup.bash
+```
+and if you've set up a catkin workspace,
 ```bash
 source ~/catkin_ws/devel/setup.bash
 ```
