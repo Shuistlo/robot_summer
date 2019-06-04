@@ -11,5 +11,7 @@ Some helpful ROS related guides:
 [change indigo to kinetic](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation)
 
 
-Some potential ideas
+# Turtlebot package installation
+1. Go get a virtual machine. 
+2. Follow [this](http://wiki.ros.org/kinetic/Installation/Ubuntu) to install ROS. 
 
