@@ -8,6 +8,8 @@ Some helpful ROS related guides:
 
 [leg detection package](http://wiki.ros.org/leg_detector)
 
+[change indigo to kinetic](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation)
+
 
 Some potential ideas
 
