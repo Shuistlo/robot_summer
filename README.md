@@ -18,4 +18,18 @@ Some helpful ROS related guides:
 ```bash
 sudo apt-get install ros-kinetic-turtlebot ros-kinetic-turtlebot-apps ros-kinetic-turtlebot-interactions ros-kinetic-turtlebot-simulator ros-kinetic-kobuki-ftdi ros-kinetic-ar-track-alvar-msgs
 ```
+4. You should now have the turtlebot packages
+5. Make sure you source your bash file
+```bash
+source ~/catkin_ws/devel/setup.bash
+```
+6. In the terminal type
+```bash
+rospack find t
+```
+and hit tab twice to display which ros packages are available. Make sure there are turtlebot packages.
+7. Attempt to launch gazebo
+```bash
+roslaunch turtlebot_gazebo turtlebot_world.launch
+```
 
