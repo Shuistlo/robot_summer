@@ -18,7 +18,7 @@ Steps:
 		b. Add some obstacles if you want. <br>
 		c. Add in a robot. It is very important that the coordinates of the robot in the world file match the coordinates you give on launch, or your robot will be physically in a different location than where it expects to be <br>
 3. You can launch turtlebot_stage like this:
-   ```bash
+```bash
 roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="<path to map file>/map.yaml" world_file:="<path to map file>/map.world" initial_pose_x:=36.5 initial_pose_y:=17 initial_pose_a:=0.0
 ```
 
