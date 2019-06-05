@@ -37,6 +37,6 @@ and hit tab twice to display which ros packages are available. Make sure there a
 roslaunch turtlebot_gazebo turtlebot_world.launch
 ```
   
-  #Problems
+  # Problems
   1. Gazebo on a VM seems to crash quite a bit
 
