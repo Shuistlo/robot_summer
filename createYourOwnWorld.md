@@ -9,14 +9,14 @@ a different robot, [you need to consider if your robot has the hardware potentia
 
 
 Steps:
-1. Make sure you've created a suitable map from a floor plan. I would advise the following:
-		a. Make the map completely black and white if possible.
-		b. Remove any non permanent detail including chairs or small tables. 
-		c. Make the walls thick black lines.
-2. There are some relevant instructions on creating a world file from [here](http://wiki.ros.org/turtlebot_stage/Tutorials/indigo/Customizing%20the%20Stage%20Simulator).
-		a. The size and pose of the floorplan inside the world file are *very* important. You will need to calculate the size and pose values from the resolution in your yaml file and your known dimensions of the map. (they should just be the dimensions in meters if your resolution is 0.05) The size is the length and height of the map and the pose is the exact middle of the map.
-		b. Add some obstacles if you want.
-		c. Add in a robot. It is very important that the coordinates of the robot in the world file match the coordinates you give on launch, or your robot will be physically in a different location than where it expects to be
+1. Make sure you've created a suitable map from a floor plan. I would advise the following:<br>
+		a. Make the map completely black and white if possible. <br>
+		b. Remove any non permanent detail including chairs or small tables. <br>
+		c. Make the walls thick black lines. <br>
+2. There are some relevant instructions on creating a world file from [here](http://wiki.ros.org/turtlebot_stage/Tutorials/indigo/Customizing%20the%20Stage%20Simulator).<br>
+		a. The size and pose of the floorplan inside the world file are *very* important. You will need to calculate the size and pose values from the resolution in your yaml file and your known dimensions of the map. (they should just be the dimensions in meters if your resolution is 0.05) The size is the length and height of the map and the pose is the exact middle of the map.<br>
+		b. Add some obstacles if you want. <br>
+		c. Add in a robot. It is very important that the coordinates of the robot in the world file match the coordinates you give on launch, or your robot will be physically in a different location than where it expects to be <br>
 3. You can launch turtlebot_stage like this:
    ```bash
 roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="<path to map file>/map.yaml" world_file:="<path to map file>/map.world" initial_pose_x:=36.5 initial_pose_y:=17 initial_pose_a:=0.0
