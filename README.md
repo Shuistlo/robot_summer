@@ -37,6 +37,22 @@ and hit tab twice to display which ros packages are available. Make sure there a
 roslaunch turtlebot_gazebo turtlebot_world.launch
 ```
   
+  # Stageros
+  1. Use the find command for ros packages to see if you can find the stage_ros package
+  ```bash
+rospack find stage_ros
+```
+  If it doesn't appear you'll need to install the package:
+  ```bash
+sudo apt-get install ros-kinetic-stage_ros
+```
+ 2. Download the maps off of this repository
+ 3. A world can be generated using three files: a png/pmg image file of the actual map, a yaml file containing map metadata, and a world file describing the world and its dimensions. Feel free to take a look inside each one. I'll include a seperate file for generating your own world if you ever want to do another building.
+ 4. Launch the turtlebot in stage! *Make sure you edit the following command to suit the location of your files*
+   ```bash
+roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="/home/shu/maps/7thedited.yaml" world_file:="/home/shu/maps/7thedited.world" initial_pose_x:=36.5 initial_pose_y:=17 initial_pose_a:=0.0
+```
+  
   # Problems
   1. Gazebo on a VM seems to crash quite a bit
 
