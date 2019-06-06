@@ -55,4 +55,5 @@ roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="/home/shu/maps/7t
   
   # Problems
   1. Gazebo on a VM seems to crash quite a bit
+  2. Stagge possibly doesn't work on VM either. If you are still adamant about using a vm you may try [this](http://wiki.ros.org/turtlebot_stdr) but I wouldn't if I were you.
 
