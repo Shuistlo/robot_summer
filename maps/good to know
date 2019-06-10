@@ -4,6 +4,11 @@ SHIFT WINDOWS KEY SPACE
 TURTLEBOT SIMULATION:
 roslaunch turtlebot_gazebo amcl_demo.launch map_file:=<full path to your map YAML file>
 
+TURTLEBOT HARDWARE:
+roslaunch turtlebot_bringup minimal.launch
+roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/shu/maps/map-strand-first-floor-5cm.yaml initial_pose_x:=11.2 initial_pose_y:=33.25 initial_pose_a:=47.1
+roslaunch turtlebot_rviz_launchers view_navigation.launch
+
 for instance,
 roslaunch turtlebot_gazebo turtlebot_world.launch
 
