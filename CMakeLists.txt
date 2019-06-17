@@ -16,7 +16,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   message_generation
-  #multi_map_server 
+  multi_map_server 
 )
 
 ## System dependencies are found with CMake's conventions
