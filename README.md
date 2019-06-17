@@ -10,6 +10,10 @@ Some helpful ROS related guides:
 
 [change indigo to kinetic](http://wiki.ros.org/turtlebot/Tutorials/indigo/Turtlebot%20Installation)
 
+# Multi Map Server
+changing maps will not work in Stage. We will need to edit Stage if we want it to work in simulation.
+
+[The Repository for the multi map server](https://github.com/Shuistlo/multi_map_server)
 
 # Turtlebot package installation
 1. Go get a virtual machine with a Ubunu 16.04 image. (may update this more later) 
@@ -56,4 +60,5 @@ roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="/home/shu/maps/7t
   # Problems
   1. Gazebo on a VM seems to crash quite a bit
   2. Stagge possibly doesn't work on VM either. If you are still adamant about using a vm you may try [this](http://wiki.ros.org/turtlebot_stdr) but I wouldn't if I were you.
+  3. The multi_map_server is in another repo (see above). This needs to go in the same level as the robot_summer project
 
