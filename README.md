@@ -13,6 +13,8 @@ Some helpful ROS related guides:
 # Multi Map Server
 changing maps will not work in Stage. We will need to edit Stage if we want it to work in simulation.
 
+please read the multi map server for instructions
+
 [The Repository for the multi map server](https://github.com/Shuistlo/multi_map_server)
 
 # Turtlebot package installation
