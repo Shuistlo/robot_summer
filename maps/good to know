@@ -6,7 +6,7 @@ roslaunch turtlebot_gazebo amcl_demo.launch map_file:=<full path to your map YAM
 
 TURTLEBOT HARDWARE:
 roslaunch turtlebot_bringup minimal.launch
-roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/shu/maps/map-strand-first-floor-5cm.yaml initial_pose_x:=11.2 initial_pose_y:=33.25 initial_pose_a:=4.71
+roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/student/catkin_ws/src/robot_summer/maps/map-strand-first-floor-5cm.yaml initial_pose_x:=11.2 initial_pose_y:=33.25 initial_pose_a:=4.71
 roslaunch turtlebot_rviz_launchers view_navigation.launch
 
 GAZEBO LAUNCH
@@ -16,7 +16,7 @@ roslaunch turtlebot_gazebo turtlebot_world.launch
 
 TURTLEBOT STAGE:
 
-roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="/home/shu/maps/7thedited.yaml" world_file:="/home/shu/maps/7thedited.world" initial_pose_x:=36.5 initial_pose_y:=17 initial_pose_a:=0.0
+roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="/home/student/catkin_ws/src/robot_summer/maps/7thedited.yaml" world_file:="/home/student/catkin_ws/src/robot_summer/maps/7thedited.world" initial_pose_x:=36.5 initial_pose_y:=17 initial_pose_a:=0.0
 
 roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="/home/shu/maps/map-strand-first-floor-5cm.yaml" world_file:="/home/shu/maps/map-strand-first-floor-5cm.world" initial_pose_x:=11.2 initial_pose_y:=33.25 initial_pose_a:=4.71
 
