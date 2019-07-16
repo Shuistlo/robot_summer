@@ -34,11 +34,11 @@ def image_callback(msg):
 def main():
     rospy.init_node('image_listener')
     # Define your image topic
-    image_topic = "/cameras/left_hand_camera/image"
+    image_topic = "/camera/rgb/image_raw"
     # Set up your subscriber and define its callback
     rospy.Subscriber(image_topic, Image, image_callback)
     # Spin until ctrl + c
-    rospy.spin()
+    rospy.sleep(5)
 
 if __name__ == '__main__':
     main()
