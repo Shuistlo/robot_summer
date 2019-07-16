@@ -21,6 +21,9 @@ import cv2
 bridge = CvBridge()
 
 def image_callback(msg):
+    lower_red = np.array([30,150,50])
+    upper_red = np.array([255,255,180])
+    
     print("Received an image!")
     try:
         # Convert your ROS Image message to OpenCV2
@@ -29,7 +32,11 @@ def image_callback(msg):
         print(e)
     else:
         # Save your OpenCV2 image as a jpeg 
-        cv2.imwrite('camera_image.jpeg', cv2_img)
+        cv2.imwrite('camera_image1.jpeg', cv2_img)
+
+	mask = cv2.inRange(cv2_img, lower_red, upper_red)
+	output = cv2.bitwise_and(image, image, mask = mask)
+	cv2.imwrite('colorFilter.jpeg', output)
 
 def main():
     rospy.init_node('image_listener')
