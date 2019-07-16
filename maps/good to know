@@ -6,7 +6,7 @@ roslaunch turtlebot_gazebo amcl_demo.launch map_file:=<full path to your map YAM
 
 TURTLEBOT HARDWARE:
 roslaunch turtlebot_bringup minimal.launch
-roslaunch turtlebot_navigation amcl_demo.launch map_file:=/home/student/catkin_ws/src/robot_summer/maps/map-strand-first-floor-5cm.yaml initial_pose_x:=11.2 initial_pose_y:=33.25 initial_pose_a:=4.71
+roslaunch robot_summer amcl_multi.launch map_file:=/home/student/catkin_ws/src/robot_summer/maps/map-strand-first-floor-5cm.yaml initial_pose_x:=11.2 initial_pose_y:=33.25 initial_pose_a:=4.71
 roslaunch turtlebot_rviz_launchers view_navigation.launch
 
 GAZEBO LAUNCH
