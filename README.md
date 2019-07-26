@@ -63,4 +63,6 @@ roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="/home/shu/maps/7t
   1. Gazebo on a VM seems to crash quite a bit
   2. Stagge possibly doesn't work on VM either. If you are still adamant about using a vm you may try [this](http://wiki.ros.org/turtlebot_stdr) but I wouldn't if I were you.
   3. The multi_map_server is in another repo (see above). This needs to go in the same level as the robot_summer project
+  4. leg_detector package not usable as our camera can't meet the angular resolution the training data was created at
 
+# [this is a very good book](http://file.ncnynl.com/ros/ros_by_example_v1_indigo.pdf)
