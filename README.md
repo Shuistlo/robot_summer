@@ -66,3 +66,6 @@ roslaunch turtlebot_stage turtlebot_in_stage.launch map_file:="/home/shu/maps/7t
   4. leg_detector package not usable as our camera can't meet the angular resolution the training data was created at
 
 # [this is a very good book](http://file.ncnynl.com/ros/ros_by_example_v1_indigo.pdf)
+
+1. [follower](https://github.com/helmifraser/turtlebot-object-follow/blob/master/FollowClass.cpp)
+2. [follower](https://github.com/pirobot/rbx1/blob/indigo-devel/rbx1_apps/nodes/object_follower.py)
