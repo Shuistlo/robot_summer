@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="robot_summer" type="src/scan.py" name="scan_values" output="screen">  
+    </node>
+</launch>

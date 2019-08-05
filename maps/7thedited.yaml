@@ -1,4 +1,4 @@
-image: /home/student/catkin_ws/src/robot_summer/maps/7thedited.pgm
+image: /home/prime/catkin_ws/src/robot_summer/maps/7thedited.pgm
 resolution: 0.050000
 origin: [-1,-1, 0.000000]
 negate: 0
