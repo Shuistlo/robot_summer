@@ -131,7 +131,7 @@ class Follower():
                 # Make sure we meet our min/max specifications
                 self.move_cmd.linear.x = copysign(max(self.min_linear_speed, 
                                         min(self.max_linear_speed, abs(linear_speed))), linear_speed)
-            else:
+            else:    
                 self.move_cmd.linear.x *= self.slow_down_factor
                 
             if (abs(x) > self.x_threshold):     
