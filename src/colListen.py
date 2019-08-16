@@ -6,7 +6,7 @@ msg=Twist()
 
 def callback(data):    
     rospy.loginfo(rospy.get_caller_id() + "I heard %f", data.data)
-    pub=rospy.Publisher('turtle1/cmd_vel',Twist,queue_size=10)
+    pub=rospy.Publisher('cmd_vel',Twist,queue_size=10)
     if(data.data>50):
 	    msg.linear.x=0.1
     else:
