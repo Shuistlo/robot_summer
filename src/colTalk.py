@@ -24,11 +24,13 @@ def talker():
     image_topic = "/camera/rgb/image_raw"
     # Set up your subscriber and define its callback
     rospy.Subscriber(image_topic, Image, image_callback)
-'''    
+'''
     ap = argparse.ArgumentParser()
 	ap.add_argument("-v", "--video", dest="/home/arabinda/catkin_ws/src/ros_seminar/scripts/ball_tracking_example.mp4",help="path")
 	ap.add_argument("-b", "--buffer", type=int, default=64,help="max buffer size")
 	args = vars(ap.parse_args())
+
+
 '''
 	greenLower = (29, 86, 6)
 	greenUpper = (64, 255, 255)
@@ -45,8 +47,8 @@ def talker():
 		frame = imutils.resize(frame, width=600)
 		hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 		mask = cv2.inRange(hsv, greenLower, greenUpper)
-		mask = cv2.erode(mask, None, iterations=2) #probably dont need this one
-		mask = cv2.dilate(mask, None, iterations=2) #or this one
+		#mask = cv2.erode(mask, None, iterations=2) #probably dont need this one
+		#mask = cv2.dilate(mask, None, iterations=2) #or this one
 		cnts = cv2.findContours(mask.copy(), cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)[-2] #or this one
 		center = None
 		if len(cnts) > 0:
@@ -62,7 +64,7 @@ def talker():
 				cv2.circle(frame, (int(x), int(y)), int(radius),(0, 255, 255), 2)
 				cv2.circle(frame, center, 5, (0, 0, 255), -1)
 		pts.appendleft(center)
-		for i in xrange(1, len(pts)):
+		for i in xrange(1, len(pts)):x
 			if pts[i - 1] is None or pts[i] is None:
 				continue
 			thickness = int(np.sqrt(64 / float(i + 1)) * 2.5)
